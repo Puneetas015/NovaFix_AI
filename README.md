@@ -1,68 +1,48 @@
-# NovaFix AI
-
-<br>
-
-## <div align="center"><b><a href="README.md">English</a></b></div>
+# 🚀 NovaFix AI: The Ultimate Neural Portrait Studio
 
 <br>
 
 <div align="center">
 
-[![PyPI](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
-[![LICENSE](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Open issue](https://img.shields.io/github/issues/Puneetas015/NovaFix_AI)](https://github.com/Puneetas015/NovaFix_AI/issues)
+![Python](https://img.shields.io/badge/Python-3.7%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)
+![AI-Powered](https://img.shields.io/badge/AI-Ready-brightgreen?style=for-the-badge)
 
 </div>
 
 <br>
 
-1. :boom: **Practical Application**: This project implements a studio-quality production pipeline for blind face restoration and portrait enhancement.
-1. :rocket: **Optimized for Windows**: This version is a *clean* build of NovaFix AI, which runs without complex CUDA extensions, making it fully compatible with **Windows** and **Standard CPU/GPU modes**.
-1. **Background Enhancement**: Integrated with **Real-ESRGAN** to ensure that non-face regions (backgrounds) are as sharp as the restored faces.
+### ✨ Transforming Yesterday's Memories into Tomorrow's Masterpieces
 
-> :star: **NovaFix AI** aims at developing a **Practical Algorithm for Real-world Face Restoration**. It leverages rich priors from pretrained GANs to transform low-quality, blurry, or noisy photos into high-definition professional portraits.
-
-<br>
+NovaFix AI isn't just an image restorer; it's a sophisticated production pipeline designed to bridge the gap between low-quality snapshots and professional studio photography. By weaving together advanced **Generative Facial Priors (GFPGAN)** and high-fidelity upscaling (**Real-ESRGAN**), we’ve built a tool that breathes life back into blurry, aged, or low-resolution portraits while preserving the authentic soul of the subject.
 
 ---
 
 ## 🖼️ Visual Results (NovaFix Studio Render)
 
-Below are the results generated using the NovaFix AI production pipeline, showcasing face restoration combined with cinematic bokeh effects.
+Experience the "NovaFix" effect. We don't just clear up pixels; we reconstruct facial geometry and apply cinematic depth-of-field for a high-end studio finish.
 
-| Original Sample | NovaFix AI Enhanced Output |
+| 📷 Original Input | ✨ NovaFix AI Enhanced |
 | :---: | :---: |
-| <img src="input_sample/Julia_Roberts_crop.png" width="350"> | <img src="outputs/NovaFix_Julia_Roberts_crop.png" width="350"> |
-| <img src="input_sample/Adele_crop.png" width="350"> | <img src="outputs/NovaFix_Studio_Adele_crop.png" width="350"> |
-| <img src="input_sample/Blake_Lively.jpg" width="350"> | <img src="outputs/NovaFix_Studio_Blake_Lively.jpg" width="350"> |
+| <img src="input_sample/Julia_Roberts_crop.png" width="400"> | <img src="outputs/NovaFix_Julia_Roberts_crop.png" width="400"> |
+| <img src="input_sample/Adele_crop.png" width="400"> | <img src="outputs/NovaFix_Studio_Adele_crop.png" width="400"> |
+| <img src="input_sample/Blake_Lively.jpg" width="400"> | <img src="outputs/NovaFix_Studio_Blake_Lively.jpg" width="400"> |
 
-> **Note:** These samples demonstrate high-fidelity identity preservation and background neural-blurring (Bokeh) using the v1.3 build.
-
----
-
-:triangular_flag_on_post: **Updates**
-
-- :white_check_mark: **Production Build**: Integrated `main.py` for automated batch processing of images.
-- :white_check_mark: **V1.3 Support**: Optimized for the **[GFPGAN V1.3 model](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)**.
-- :white_check_mark: **Studio Bokeh**: Added a custom neural segmentation layer via MediaPipe for professional depth-of-field.
+> **Studio Insight:** Every render utilizes our custom **Neural Bokeh Master**, isolating the subject and applying a soft, professional blur to the background for maximum impact.
 
 ---
 
-### :book: NovaFix AI: Production-Ready Blind Face Restoration
+## 🔥 Key Features
 
-NovaFix AI combines several state-of-the-art models:
-* **Face Restoration**: GFPGAN (Generative Facial Prior)
-* **Background Upscaling**: Real-ESRGAN
-* **Portrait Segmentation**: MediaPipe Selfie Segmenter
+* 💎 **Authentic Restoration**: Powered by the **GFPGAN v1.3** engine for natural skin textures.
+* 🌆 **Full-Frame Clarity**: Uses **Real-ESRGAN** to ensure the background is as sharp as the face.
+* 🎭 **Cinematic Depth**: Integrated **MediaPipe Selfie Segmentation** for professional bokeh effects.
+* 💻 **Windows Optimized**: A "clean" build that works on standard setups without complex CUDA errors.
 
 ---
 
 ## :wrench: Dependencies and Installation
-
-- Python >= 3.7
-- [PyTorch >= 1.7](https://pytorch.org/)
-
-### Installation
 
 1. **Clone the repository**
     ```bash
