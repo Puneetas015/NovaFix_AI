@@ -1,6 +1,10 @@
 # NovaFix AI
 
+<br>
 
+## <div align="center"><b><a href="README.md">English</a></b></div>
+
+<br>
 
 <div align="center">
 
@@ -28,25 +32,25 @@ Below are the results generated using the NovaFix AI production pipeline, showca
 
 | Original Sample | NovaFix AI Enhanced Output |
 | :---: | :---: |
-| <img src="input_sample/Julia_Roberts_crop.png" width="350"> | <img src="assets/NovaFix_Julia_Roberts_crop.png" width="350"> |
-| <img src="input_sample/Adele_crop.png" width="350"> | <img src="assets/NovaFix_Studio_Adele_crop.png" width="350"> |
-| <img src="input_sample/Blake_Lively.jpg" width="350"> | <img src="assets/NovaFix_Studio_Blake_Lively.jpg" width="350"> |
+| <img src="input_sample/Julia_Roberts_crop.png" width="350"> | <img src="outputs/NovaFix_Julia_Roberts_crop.png" width="350"> |
+| <img src="input_sample/Adele_crop.png" width="350"> | <img src="outputs/NovaFix_Studio_Adele_crop.png" width="350"> |
+| <img src="input_sample/Blake_Lively.jpg" width="350"> | <img src="outputs/NovaFix_Studio_Blake_Lively.jpg" width="350"> |
 
-> **Note:** These samples demonstrate the high-fidelity identity preservation and background neural-blurring (Bokeh) capabilities of the v1.3 build.
+> **Note:** These samples demonstrate high-fidelity identity preservation and background neural-blurring (Bokeh) using the v1.3 build.
 
 ---
 
 :triangular_flag_on_post: **Updates**
 
 - :white_check_mark: **Production Build**: Integrated `main.py` for automated batch processing of images.
-- :white_check_mark: **V1.3 Support**: Optimized for the **[GFPGAN V1.3 model](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)**, which produces more natural textures and maintains identity better than previous versions.
-- :white_check_mark: **Studio Bokeh**: Added a custom neural segmentation layer via MediaPipe to create professional depth-of-field effects.
+- :white_check_mark: **V1.3 Support**: Optimized for the **[GFPGAN V1.3 model](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)**.
+- :white_check_mark: **Studio Bokeh**: Added a custom neural segmentation layer via MediaPipe for professional depth-of-field.
 
 ---
 
 ### :book: NovaFix AI: Production-Ready Blind Face Restoration
 
-NovaFix AI combines several state-of-the-art models into a single executable pipeline:
+NovaFix AI combines several state-of-the-art models:
 * **Face Restoration**: GFPGAN (Generative Facial Prior)
 * **Background Upscaling**: Real-ESRGAN
 * **Portrait Segmentation**: MediaPipe Selfie Segmenter
@@ -57,7 +61,6 @@ NovaFix AI combines several state-of-the-art models into a single executable pip
 
 - Python >= 3.7
 - [PyTorch >= 1.7](https://pytorch.org/)
-- NVIDIA GPU + CUDA (Optional for acceleration)
 
 ### Installation
 
@@ -77,11 +80,11 @@ NovaFix AI combines several state-of-the-art models into a single executable pip
 ## :zap: Quick Inference
 
 **1. Download Pre-trained Models**
-To run the project, place the following models in the root directory:
+Place these in the root directory:
 * [GFPGANv1.3.pth](https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth)
 * [selfie_segmenter.tflite](https://developers.google.com/mediapipe/solutions/vision/selfie_segmenter#models)
 
 **2. Process Images**
-Place your images in the `inputs/` folder and run:
+Place images in `inputs/` and run:
 ```bash
 python main.py
