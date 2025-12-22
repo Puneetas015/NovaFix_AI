@@ -1,1 +1,8 @@
-pip freeze > requirements.txt
+torch
+torchvision
+opencv-python
+numpy
+mediapipe
+basicsr
+gfpgan
+realesrgan
