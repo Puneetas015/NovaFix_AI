@@ -1,15 +1,14 @@
 # 🚀 NovaFix AI: The Ultimate Neural Portrait Studio
 
 <br>
+<div align="center">
 
-<div align="center">
-<div align="center">
-  <video src="assets/demo.mp4" width="100%" controls autoplay muted loop>
-    Your browser does not support the video tag.
-  </video>
-</div>
+[[Watch a Demo Video]](https://drive.google.com/file/d/18GaiilcIBCSRZ_KTAq5UGnBbWVR4NfxH/view)
+
+
 
 <br>
+
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -34,7 +33,6 @@ Experience the "NovaFix" effect. We don't just clear up pixels; we reconstruct f
 | :---: | :---: |
 | <img src="input_sample/Julia_Roberts_crop.png" width="400"> | <img src="outputs/NovaFix_Julia_Roberts_crop.png" width="400"> |
 | <img src="input_sample/Adele_crop.png" width="400"> | <img src="outputs/NovaFix_Studio_Adele_crop.png" width="400"> |
-| <img src="input_sample/Blake_Lively.jpg" width="400"> | <img src="outputs/NovaFix_Studio_Blake_Lively.jpg" width="400"> |
 
 > **Studio Insight:** Every render utilizes our custom **Neural Bokeh Master**, isolating the subject and applying a soft, professional blur to the background for maximum impact.
 
@@ -57,7 +55,7 @@ Experience the "NovaFix" effect. We don't just clear up pixels; we reconstruct f
     cd NovaFix_AI
     ```
 
-1. **Install dependent packages**
+2. **Install dependent packages**
     ```bash
     pip install -r requirements.txt
     ```
